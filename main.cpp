@@ -13,7 +13,7 @@ unsigned long int jc(int &n){
 	}
 	return res;
 }
-long int openmpF(int &max){
+int openmpF(int &max){
 	std::ios::sync_with_stdio(false);
 	setvbuf(stdout,NULL,_IOFBF,6553500000);
 	int *v;
@@ -55,7 +55,7 @@ long int openmpF(int &max){
 			v[i]=abs(v[i]);
 		}
 	}
-	return end;
+	return 0;
 }
 int main(){
     	int max=10;   //此为数字位数
